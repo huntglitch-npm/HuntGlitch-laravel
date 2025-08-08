@@ -195,7 +195,7 @@ composer update itpathsolutions/huntglitch
 Absolutely! Contributions are welcome. See the [CONTRIBUTING](https://github.com/vidhi-nirmal71/huntglitch/blob/main/CONTRIBUTING.md) guidelines for details.  
 
 ### 6. Where can I get support?  
-For any support or queries, contact us via [IT Path Solutions](https://www.itpathsolutions.com/contact-us/).  
+For any support or queries, feel free to [contact us](mailto:support@huntglitch.com).  
 
 ## **Contributing**  
 We welcome contributions from the community! Feel free to **Fork** the repository and contribute to this module. You can also create a pull request, and we will merge your changes into the main branch. See [CONTRIBUTING](https://github.com/vidhi-nirmal71/huntglitch/blob/main/CONTRIBUTING.md) for details.  
@@ -207,7 +207,7 @@ Please review our [Security Policy](https://github.com/vidhi-nirmal71/huntglitch
 This package is open-source and available under the MIT License. See the [LICENSE](https://github.com/vidhi-nirmal71/huntglitch/blob/main/LICENSE) file for details.  
 
 ## **Get Support**  
-- Feel free to [contact us](https://www.itpathsolutions.com/contact-us/) if you have any questions.  
+- Feel free to [contact us](mailto:support@huntglitch.com) if you have any questions.  
 - If you find this project helpful, please give us a ⭐ [Star](https://github.com/vidhi-nirmal71/huntglitch/stargazers).  
 
 ## **You may also find our other useful packages:**  

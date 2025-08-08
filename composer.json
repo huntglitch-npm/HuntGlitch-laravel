@@ -1,6 +1,6 @@
 {
     "name": "itpathsolutions/huntglitch",
-    "description": "Huntglitch package for the glitch",
+    "description": "Huntglitch package for the Laravel",
     "license": "MIT",
     "autoload": {
         "psr-4": {

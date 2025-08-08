@@ -7,7 +7,7 @@ We take security seriously and appreciate your efforts in making this project sa
 If you discover a security vulnerability, please report it responsibly by following these steps:  
 
 1. **Do not disclose the vulnerability publicly.**  
-2. Email us at **[enquiry@itpathsolutions.com](mailto:enquiry@itpathsolutions.com)** with the details of the vulnerability, including:  
+2. Email us at **[support@huntglitch.com](mailto:support@huntglitch.com)** with the details of the vulnerability, including:  
    - A clear description of the issue.  
    - Steps to reproduce the vulnerability.  
    - Potential impact and suggested fixes (if any).  
