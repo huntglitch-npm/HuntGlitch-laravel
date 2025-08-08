@@ -68,7 +68,7 @@ Before implementing the package, please complete these setup steps:
 Run the following command to install the package via Composer:
 
 ```bash
-composer require itpath/huntglitch
+composer require itpathsolutions/huntglitch
 ```
 
 ## 🌐 Environment Variables
@@ -185,30 +185,30 @@ composer require itpathsolutions/huntglitch
 This package supports **Laravel 9, 10, 11, and 12** with **PHP 8+** compatibility.   
 
 
-### 5. How do I update the package to the latest version?  
+### 4. How do I update the package to the latest version?  
 Run the following command to update:  
 ```bash
 composer update itpathsolutions/huntglitch
 ```  
 
-### 6. Can I contribute to this package?  
-🤝 Absolutely! Contributions are welcome. See the [CONTRIBUTING](https://github.com/vidhi-nirmal71/redisinfo/blob/main/CONTRIBUTING.md) guidelines for details.  
+### 5. Can I contribute to this package?  
+🤝 Absolutely! Contributions are welcome. See the [CONTRIBUTING](https://github.com/vidhi-nirmal71/huntglitch/blob/main/CONTRIBUTING.md) guidelines for details.  
 
-### 7. Where can I get support?  
+### 6. Where can I get support?  
 For any support or queries, contact us via [IT Path Solutions](https://www.itpathsolutions.com/contact-us/).  
 
 ## **Contributing**  
-We welcome contributions from the community! Feel free to **Fork** the repository and contribute to this module. You can also create a pull request, and we will merge your changes into the main branch. See [CONTRIBUTING](https://github.com/vidhi-nirmal71/redisinfo/blob/main/CONTRIBUTING.md) for details.  
+We welcome contributions from the community! Feel free to **Fork** the repository and contribute to this module. You can also create a pull request, and we will merge your changes into the main branch. See [CONTRIBUTING](https://github.com/vidhi-nirmal71/huntglitch/blob/main/CONTRIBUTING.md) for details.  
 
 ## **Security Vulnerabilities**  
-Please review our [Security Policy](https://github.com/vidhi-nirmal71/redisinfo/security/policy) on how to report security vulnerabilities.  
+Please review our [Security Policy](https://github.com/vidhi-nirmal71/huntglitch/security/policy) on how to report security vulnerabilities.  
 
 ## **License**  
-This package is open-source and available under the MIT License. See the [LICENSE](https://github.com/vidhi-nirmal71/redisinfo/blob/main/LICENSE) file for details.  
+This package is open-source and available under the MIT License. See the [LICENSE](https://github.com/vidhi-nirmal71/huntglitch/blob/main/LICENSE) file for details.  
 
 ## **Get Support**  
 - Feel free to [contact us](https://www.itpathsolutions.com/contact-us/) if you have any questions.  
-- If you find this project helpful, please give us a ⭐ [Star](https://github.com/vidhi-nirmal71/redisinfo/stargazers).  
+- If you find this project helpful, please give us a ⭐ [Star](https://github.com/vidhi-nirmal71/huntglitch/stargazers).  
 
 ## **You may also find our other useful packages:**  
 - [MySQL Info Package 🚀](https://packagist.org/packages/itpathsolutions/mysqlinfo)  

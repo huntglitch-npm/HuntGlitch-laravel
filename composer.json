@@ -1,5 +1,5 @@
 {
-    "name": "itpath/huntglitch",
+    "name": "itpathsolutions/huntglitch",
     "description": "Huntglitch package for the glitch",
     "license": "MIT",
     "autoload": {
@@ -18,7 +18,10 @@
         "laravel",
         "php"
     ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^9.0|^10.0|^11.0|12.0"
+    },
     "minimum-stability": "dev",
-    "require": {},
-    "version": "1.0.0"
+    "version": "1.0.1"
 }
