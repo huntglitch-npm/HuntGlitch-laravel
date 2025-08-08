@@ -8,7 +8,7 @@ Thank you for considering contributing to our project! We welcome all contributi
 2. **Clone the Repository, Create a New Branch, Make Changes, Commit, Push, and Create a Pull Request:**  
    - Clone the repository:  
      ```bash
-     git clone https://github.com/vidhi-nirmal71/huntglitch
+     git clone https://github.com/vidhi-nirmal71/huntglitch.git
      cd huntglitch
      ```
    - Create a new branch:  
