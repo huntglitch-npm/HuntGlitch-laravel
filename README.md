@@ -19,7 +19,6 @@ You can use Huntglitch to find out any errors or bugs in the critical codes of y
 - [Features](#features)  
 - [Supported Versions](#supported-versions)  
 - [Installation](#installation)  
-- [Vendor Publish](#vendor-publish)  
 - [Environment Configuration](#environment-configuration)  
 - [Usage](#usage-in-laravel)  
 - [Methods](#methods-overview)  
@@ -54,29 +53,22 @@ Run the following command to install the package via Composer:
 composer require itpath/huntglitch
 ```
 
-## 🔧 Vendor Publish
-
-To publish configuration files, run:
-
-```bash
-php artisan vendor:publish --provider="Itpathsolutions\huntglitch\MysqlInfoServiceProvider" --tag=config
-php artisan vendor:publish --provider="Itpathsolutions\huntglitch\QueryLoggerServiceProvider" --tag=config
-```
-
 ## 🌐 Environment Variables
 
-Add these variables to your `.env` file if you are using Lighthouse integration:
+Add these variables to your `.env` file if you are using Huntglitch integration:
 
 ```env
-LIGHTHOUSE_PROJECT_ID={your-project-id}
-LIGHTHOUSE_DELIVERABLE_ID={your-deliverable-id}
+HUNTGLITCH_PROJECT_ID={your-project-id}
+HUNTGLITCH_DELIVERABLE_ID={your-deliverable-id}
+HUNTGLITCH_LOG_ENDPOINT=https://api.huntglitch.com/
 ```
 
 And update `config/app.php` to use them:
 
 ```php
-'LIGHTHOUSE_PROJECT_ID' => env('LIGHTHOUSE_PROJECT_ID', ''),
-'LIGHTHOUSE_DELIVERABLE_ID' => env('LIGHTHOUSE_DELIVERABLE_ID', ''),
+'HUNTGLITCH_PROJECT_ID' => env('HUNTGLITCH_PROJECT_ID', ''),
+'HUNTGLITCH_DELIVERABLE_ID' => env('HUNTGLITCH_DELIVERABLE_ID', ''),
+'HUNTGLITCH_LOG_ENDPOINT' => env('https://api.huntglitch.com/', ''),
 ```
 
 Finally, regenerate the autoloader:
@@ -91,12 +83,12 @@ composer dump-autoload
 ### ➤ Basic Usage in a try-catch block
 
 ```php
-use Itpath\Huntglitch\Lighthouse;
+use Itpath\Huntglitch\Huntglitch;
 
 try {
     echo 100 / 0;
 } catch (Throwable $e) {
-    $glitch = new Lighthouse();
+    $glitch = new Huntglitch();
     $glitch->add($e);
 }
 ```
@@ -106,12 +98,12 @@ try {
 Update the `register()` method in `app/Exceptions/Handler.php`:
 
 ```php
-use Itpath\Huntglitch\Lighthouse;
+use Itpath\Huntglitch\Huntglitch;
 
 public function register()
 {
     $this->reportable(function (Throwable $e) {
-        $glitch = new Lighthouse();
+        $glitch = new Huntglitch();
         $glitch->add($e);
     });
 }
