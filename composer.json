@@ -1,0 +1,24 @@
+{
+    "name": "itpath/huntglitch",
+    "description": "Huntglitch package for the glitch",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Itpath\\Huntglitch\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "It Path Solutions"
+        }
+    ],
+    "keywords": [
+        "huntglitch",
+        "itpathsolutions",
+        "laravel",
+        "php"
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "version": "1.0.0"
+}
