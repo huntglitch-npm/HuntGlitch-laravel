@@ -5,7 +5,7 @@
 You can use Huntglitch to find out any errors or bugs in the critical codes of your app or software, quickly find out bugs, prevent lags due to rising user requests by forecasting future demand and quickly monitor the overall health of your app or software with ease.  
 
 
-<p>🏷️  
+<p>  
 <a href="https://packagist.org/search/?tags=logging" target="_blank" rel="noopener noreferrer">#Logging</a>&nbsp;  
 <a href="https://packagist.org/search/?tags=debugging" target="_blank" rel="noopener noreferrer">#Debugging</a>&nbsp;  
 <a href="https://packagist.org/search/?tags=laravel" target="_blank" rel="noopener noreferrer">#Laravel</a>&nbsp;  
