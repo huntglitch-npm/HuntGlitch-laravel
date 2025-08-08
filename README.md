@@ -182,13 +182,13 @@ composer require itpathsolutions/huntglitch
 ```  
 
 ### 3. Which Laravel versions are supported?  
-This package supports **Laravel 9, 10, and 11** with **PHP 8+** compatibility.   
+This package supports **Laravel 9, 10, 11, and 12** with **PHP 8+** compatibility.   
 
 
 ### 5. How do I update the package to the latest version?  
 Run the following command to update:  
 ```bash
-composer update itpathsolutions/redisinfo
+composer update itpathsolutions/huntglitch
 ```  
 
 ### 6. Can I contribute to this package?  
