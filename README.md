@@ -30,6 +30,24 @@ You can use Huntglitch to find out any errors or bugs in the critical codes of y
 - [Support](#get-support)   
 
 
+## 📝 Getting Started with Huntglitch  
+
+Before implementing the package, please complete these setup steps:  
+
+1. **Register an Account**  
+   Sign up for a free Huntglitch account here: [https://app.huntglitch.com/register](https://app.huntglitch.com/register)  
+
+2. **Create a Project**  
+   Once registered, create a new project here: [https://app.huntglitch.com/project/create](https://app.huntglitch.com/project/create)  
+
+3. **Follow the Installation & Implementation Guide**  
+   Implement this package in your Laravel application by following the steps in the [Installation](#installation) and [Usage in Laravel](#usage-in-laravel) sections of this README.  
+
+4. **View Your Logs & Error Reports**  
+   After the integration is complete and your application starts generating logs, you can view all errors, warnings, and queries in your Huntglitch dashboard:  
+   [https://app.huntglitch.com/projects](https://app.huntglitch.com/projects) → Select your project to view detailed logs.  
+
+
 ## ⚡ Features
 
 - Automatic logging of exceptions and errors  
@@ -43,7 +61,7 @@ You can use Huntglitch to find out any errors or bugs in the critical codes of y
 ## 🛠 Supported Versions
 
 - **PHP**: ^8.0  
-- **Laravel**: ^9.0 | ^10.0 | ^11.0
+- **Laravel**: ^9.0 | ^10.0 | ^11.0 | ^12.0
 
 ## 📦 Installation
 
@@ -93,7 +111,9 @@ try {
 }
 ```
 
-### ➤ Global Usage in `Handler.php`
+### ➤ Global Usage for Exception Logging
+
+#### **For Laravel 9, 10, and 11** (`Handler.php` method)  
 
 Update the `register()` method in `app/Exceptions/Handler.php`:
 
@@ -107,6 +127,23 @@ public function register()
         $glitch->add($e);
     });
 }
+```
+#### **For Laravel 12** (`bootstrap/app.php` method)  
+
+In Laravel 12, the `Handler.php` file is no longer used for exception handling.  
+Instead, open `bootstrap/app.php` and add the following inside the **exception configuration** section:  
+
+```php
+use Illuminate\Foundation\Configuration\Exceptions;
+use Itpath\Huntglitch\Huntglitch;
+
+->withExceptions(function (Exceptions $exceptions): void {
+    $exceptions->report(function (\Throwable $e) {
+        $glitch = new Huntglitch();
+        $glitch->add($e);
+    });
+})
+->create();
 ```
 
 ## 🧪 Methods Overview
@@ -179,3 +216,4 @@ This package is open-source and available under the MIT License. See the [LICENS
 - [Role Wise Session Manager Package 🚀](https://packagist.org/packages/itpathsolutions/role-wise-session-manager)  
 - [Authinfo - User Login Tracker 🚀](https://packagist.org/packages/itpathsolutions/authinfo)   
 - [Chatbot Package 🚀](https://packagist.org/packages/itpathsolutions/chatbot)   
+- [Redis Package 🚀](https://packagist.org/packages/itpathsolutions/redisinfo)   
