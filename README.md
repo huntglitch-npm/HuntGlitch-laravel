@@ -1,4 +1,4 @@
-# 🚨 Huntglitch - Laravel Error & Query Logger Package
+# Huntglitch - Laravel Error & Query Logger Package
 
 **Huntglitch** is a development monitoring platform that can help you instantly solve bugs, broken codes and avoid crashes and false API calls with ease. Huntglitch gives you answers, not hints.
 
@@ -14,7 +14,7 @@ You can use Huntglitch to find out any errors or bugs in the critical codes of y
 <a href="https://packagist.org/search/?tags=query-logger" target="_blank" rel="noopener noreferrer">#QueryLogger</a>  
 </p>
 
-## 📚 Documentation
+## Documentation
 
 - [Features](#features)  
 - [Supported Versions](#supported-versions)  
@@ -30,7 +30,7 @@ You can use Huntglitch to find out any errors or bugs in the critical codes of y
 - [Support](#get-support)   
 
 
-## 📝 Getting Started with Huntglitch  
+## Getting Started with Huntglitch  
 
 Before implementing the package, please complete these setup steps:  
 
@@ -48,7 +48,7 @@ Before implementing the package, please complete these setup steps:
    [https://app.huntglitch.com/projects](https://app.huntglitch.com/projects) → Select your project to view detailed logs.  
 
 
-## ⚡ Features
+## Features
 
 - Automatic logging of exceptions and errors  
 - Track and store MySQL query logs  
@@ -58,12 +58,12 @@ Before implementing the package, please complete these setup steps:
 - Built-in support for tagging logs with severity levels  
 
 
-## 🛠 Supported Versions
+## Supported Versions
 
 - **PHP**: ^8.0  
 - **Laravel**: ^9.0 | ^10.0 | ^11.0 | ^12.0
 
-## 📦 Installation
+## Installation
 
 Run the following command to install the package via Composer:
 
@@ -71,7 +71,7 @@ Run the following command to install the package via Composer:
 composer require itpathsolutions/huntglitch
 ```
 
-## 🌐 Environment Variables
+## Environment Variables
 
 Add these variables to your `.env` file if you are using Huntglitch integration:
 
@@ -96,7 +96,7 @@ composer dump-autoload
 ```
 
 
-## 🚀 Usage in Laravel
+## Usage in Laravel
 
 ### ➤ Basic Usage in a try-catch block
 
@@ -146,7 +146,7 @@ use Itpath\Huntglitch\Huntglitch;
 ->create();
 ```
 
-## 🧪 Methods Overview
+## Methods Overview
 
 ### `add($exception, $type = 'error', $additionalData = [])`
 
@@ -173,10 +173,10 @@ All these methods accept:
 ## **FAQs**  
 
 ### 1. What does this package do?  
-🔍 The **Huntglitch** package provides an **Error & Query Logger Package** to monitor **errors, warning, info and debug** of Laravel applications.  
+The **Huntglitch** package provides an **Error & Query Logger Package** to monitor **errors, warning, info and debug** of Laravel applications.  
 
 ### 2. How do I install the package?  
-📦 Run the following command in your terminal:  
+Run the following command in your terminal:  
 ```bash
 composer require itpathsolutions/huntglitch
 ```  
@@ -192,7 +192,7 @@ composer update itpathsolutions/huntglitch
 ```  
 
 ### 5. Can I contribute to this package?  
-🤝 Absolutely! Contributions are welcome. See the [CONTRIBUTING](https://github.com/vidhi-nirmal71/huntglitch/blob/main/CONTRIBUTING.md) guidelines for details.  
+Absolutely! Contributions are welcome. See the [CONTRIBUTING](https://github.com/vidhi-nirmal71/huntglitch/blob/main/CONTRIBUTING.md) guidelines for details.  
 
 ### 6. Where can I get support?  
 For any support or queries, contact us via [IT Path Solutions](https://www.itpathsolutions.com/contact-us/).  
@@ -211,9 +211,9 @@ This package is open-source and available under the MIT License. See the [LICENS
 - If you find this project helpful, please give us a ⭐ [Star](https://github.com/vidhi-nirmal71/huntglitch/stargazers).  
 
 ## **You may also find our other useful packages:**  
-- [MySQL Info Package 🚀](https://packagist.org/packages/itpathsolutions/mysqlinfo)  
-- [PHP Info Package 🚀](https://packagist.org/packages/itpathsolutions/phpinfo)  
-- [Role Wise Session Manager Package 🚀](https://packagist.org/packages/itpathsolutions/role-wise-session-manager)  
-- [Authinfo - User Login Tracker 🚀](https://packagist.org/packages/itpathsolutions/authinfo)   
-- [Chatbot Package 🚀](https://packagist.org/packages/itpathsolutions/chatbot)   
-- [Redis Package 🚀](https://packagist.org/packages/itpathsolutions/redisinfo)   
+- [MySQL Info Package](https://packagist.org/packages/itpathsolutions/mysqlinfo)  
+- [PHP Info Package](https://packagist.org/packages/itpathsolutions/phpinfo)  
+- [Role Wise Session Manager Package](https://packagist.org/packages/itpathsolutions/role-wise-session-manager)  
+- [Authinfo - User Login Tracker](https://packagist.org/packages/itpathsolutions/authinfo)   
+- [Chatbot Package](https://packagist.org/packages/itpathsolutions/chatbot)   
+- [Redis Package](https://packagist.org/packages/itpathsolutions/redisinfo)   
