@@ -68,7 +68,7 @@ Before implementing the package, please complete these setup steps:
 Run the following command to install the package via Composer:
 
 ```bash
-composer require itpathsolutions/huntglitch
+composer require ips/huntglitch
 ```
 
 ## Environment Variables
@@ -178,7 +178,7 @@ The **Huntglitch** package provides an **Error & Query Logger Package** to monit
 ### 2. How do I install the package?  
 Run the following command in your terminal:  
 ```bash
-composer require itpathsolutions/huntglitch
+composer require ips/huntglitch
 ```  
 
 ### 3. Which Laravel versions are supported?  
@@ -188,7 +188,7 @@ This package supports **Laravel 9, 10, 11, and 12** with **PHP 8+** compatibilit
 ### 4. How do I update the package to the latest version?  
 Run the following command to update:  
 ```bash
-composer update itpathsolutions/huntglitch
+composer update ips/huntglitch
 ```  
 
 ### 5. Can I contribute to this package?  
