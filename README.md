@@ -192,23 +192,23 @@ composer update ips-laravel/huntglitch
 ```  
 
 ### 5. Can I contribute to this package?  
-Absolutely! Contributions are welcome. See the [CONTRIBUTING](https://github.com/vidhi-nirmal71/huntglitch/blob/main/CONTRIBUTING.md) guidelines for details.  
+Absolutely! Contributions are welcome. See the [CONTRIBUTING](https://github.com/huntglitch-npm/HuntGlitch-laravel/blob/main/CONTRIBUTING.md) guidelines for details.  
 
 ### 6. Where can I get support?  
 For any support or queries, feel free to [contact us](mailto:support@huntglitch.com).  
 
 ## **Contributing**  
-We welcome contributions from the community! Feel free to **Fork** the repository and contribute to this module. You can also create a pull request, and we will merge your changes into the main branch. See [CONTRIBUTING](https://github.com/vidhi-nirmal71/huntglitch/blob/main/CONTRIBUTING.md) for details.  
+We welcome contributions from the community! Feel free to **Fork** the repository and contribute to this module. You can also create a pull request, and we will merge your changes into the main branch. See [CONTRIBUTING](https://github.com/huntglitch-npm/HuntGlitch-laravel/blob/main/CONTRIBUTING.md) for details.  
 
 ## **Security Vulnerabilities**  
-Please review our [Security Policy](https://github.com/vidhi-nirmal71/huntglitch/security/policy) on how to report security vulnerabilities.  
+Please review our [Security Policy](https://github.com/huntglitch-npm/HuntGlitch-laravel/security/policy) on how to report security vulnerabilities.  
 
 ## **License**  
-This package is open-source and available under the MIT License. See the [LICENSE](https://github.com/vidhi-nirmal71/huntglitch/blob/main/LICENSE) file for details.  
+This package is open-source and available under the MIT License. See the [LICENSE](https://github.com/huntglitch-npm/HuntGlitch-laravel/blob/main/LICENSE) file for details.  
 
 ## **Get Support**  
 - Feel free to [contact us](mailto:support@huntglitch.com) if you have any questions.  
-- If you find this project helpful, please give us a ⭐ [Star](https://github.com/vidhi-nirmal71/huntglitch/stargazers).  
+- If you find this project helpful, please give us a ⭐ [Star](https://github.com/huntglitch-npm/HuntGlitch-laravel/stargazers).  
 
 ## **You may also find our other useful packages:**  
 - [MySQL Info Package](https://packagist.org/packages/itpathsolutions/mysqlinfo)  
