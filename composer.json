@@ -1,5 +1,5 @@
 {
-    "name": "ips/huntglitch",
+    "name": "ips-laravel/huntglitch",
     "description": "Huntglitch package for the Laravel",
     "license": "MIT",
     "autoload": {
