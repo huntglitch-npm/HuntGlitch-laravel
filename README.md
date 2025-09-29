@@ -73,27 +73,23 @@ composer require ips-laravel/huntglitch
 
 ## Environment Variables
 
-Add these variables to your `.env` file if you are using Huntglitch integration:
+
+Add these variables to your `.env` file:
 
 ```env
 HUNTGLITCH_PROJECT_ID={your-project-id}
 HUNTGLITCH_DELIVERABLE_ID={your-deliverable-id}
 HUNTGLITCH_LOG_ENDPOINT=https://api.huntglitch.com/
+HUNTGLITCH_JS_DOMAIN=example.com,anotherdomain.com,sub.site.com
 ```
 
-And update `config/app.php` to use them:
-
-```php
-'HUNTGLITCH_PROJECT_ID' => env('HUNTGLITCH_PROJECT_ID', ''),
-'HUNTGLITCH_DELIVERABLE_ID' => env('HUNTGLITCH_DELIVERABLE_ID', ''),
-'HUNTGLITCH_LOG_ENDPOINT' => env('https://api.huntglitch.com/', ''),
-```
-
-Finally, regenerate the autoloader:
+Then publish the Huntglitch config file:
 
 ```bash
-composer dump-autoload
+php artisan vendor:publish --provider="Itpath\Huntglitch\HuntglitchServiceProvider" --tag=config
 ```
+
+This will create `config/huntglitch.php` in your app. The package will automatically use these values from your `.env` file—no need to edit `config/app.php`.
 
 
 ## Usage in Laravel

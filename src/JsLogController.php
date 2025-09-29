@@ -10,7 +10,7 @@ class JsLogController extends BaseController
     public function receive(Request $request)
     {
         // Domain verification
-        $allowedDomainsRaw = config('app.HUNTGLITCH_JS_DOMAIN', '');  
+        $allowedDomainsRaw = config('huntglitch.js_domain', '');
         // You can now specify multiple allowed domains in your .env or config like this:
         // HUNTGLITCH_JS_DOMAIN=example.com,anotherdomain.com,sub.site.com
 

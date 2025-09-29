@@ -18,9 +18,9 @@ class Huntglitch
 
     public function __construct()
     {
-        $this->project_id = config('app.HUNTGLITCH_PROJECT_ID');
-        $this->deliverable_id = config('app.HUNTGLITCH_DELIVERABLE_ID');
-        $this->log_endpoint = config('app.HUNTGLITCH_LOG_ENDPOINT');
+        $this->project_id = config('huntglitch.project_id');
+        $this->deliverable_id = config('huntglitch.deliverable_id');
+        $this->log_endpoint = config('huntglitch.log_endpoint');
 
         $st = new SystemTags;
         $this->systemTags = $st->generateTags();
