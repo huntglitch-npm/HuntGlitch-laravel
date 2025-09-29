@@ -36,13 +36,13 @@ class JsLogController extends BaseController
 
         // Build payload for Huntglitch
         $huntglitch = new Huntglitch();
-        $project_id = $huntglitch->project_id;
-        $deliverable_id = $huntglitch->deliverable_id;
+        $jsProjectId = $huntglitch->jsProjectId;
+        $jsDeliverableId = $huntglitch->jsDeliverableId;
 
         $raw = $request->all();
         $payload = [
-            'vp' => $project_id,
-            'vd' => $deliverable_id,
+            'vp' => $jsProjectId,
+            'vd' => $jsDeliverableId,
             'o' => $request->input('o', 0),
             'a' => $request->input('a', ''),
             'r' => $request->ip(),

@@ -9,6 +9,8 @@ class Huntglitch
 {
     public $projectId = '';
     public $deliverableId = '';
+    public $jsProjectId = '';
+    public $jsDeliverableId = '';
     public $logEndpoint = '';
     public $systemTags = [];
     public $payload = [];
@@ -17,6 +19,8 @@ class Huntglitch
     {
         $this->projectId = config('huntglitch.project_id');
         $this->deliverableId = config('huntglitch.deliverable_id');
+        $this->jsProjectId = config('huntglitch.js_project_id');
+        $this->jsDeliverableId = config('huntglitch.js_deliverable_id');
         $this->logEndpoint = config('huntglitch.log_endpoint');
 
         $st = new SystemTags;
