@@ -12,6 +12,9 @@ class HuntglitchServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        // Load package routes
+        $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
+
         // Publish config file
         $this->publishes([
             __DIR__ . '/../config/huntglitch.php' => config_path('huntglitch.php'),
