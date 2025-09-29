@@ -4,23 +4,20 @@ namespace Itpath\Huntglitch;
 
 use Throwable;
 
+
 class Huntglitch
 {
-    protected $project_id = '';
-
-    protected $deliverable_id = '';
-
-    protected $log_endpoint = '';
-
+    public $projectId = '';
+    public $deliverableId = '';
+    public $logEndpoint = '';
     public $systemTags = [];
-
     public $payload = [];
 
     public function __construct()
     {
-        $this->project_id = config('huntglitch.project_id');
-        $this->deliverable_id = config('huntglitch.deliverable_id');
-        $this->log_endpoint = config('huntglitch.log_endpoint');
+        $this->projectId = config('huntglitch.project_id');
+        $this->deliverableId = config('huntglitch.deliverable_id');
+        $this->logEndpoint = config('huntglitch.log_endpoint');
 
         $st = new SystemTags;
         $this->systemTags = $st->generateTags();
@@ -53,11 +50,11 @@ class Huntglitch
 
     public function add($data, $errorType = '', array $additionalData = [])
     {
-        if ($this->project_id == '') {
+        if ($this->projectId == '') {
             return 'Project Key Not Found';
         }
 
-        if ($this->deliverable_id == '') {
+        if ($this->deliverableId == '') {
             return 'Deliverable Key Not Found';
         }
 
@@ -85,8 +82,8 @@ class Huntglitch
         $payloadsData['n'] = request()->method();
 
         $payload = [
-            'vp' => $this->project_id,
-            'vd' => $this->deliverable_id,
+            'vp' => $this->projectId,
+            'vd' => $this->deliverableId,
             'o' => $type,
             'a' => json_encode($payloadsData), // a means data
             'r' => request()->ip(),
@@ -98,14 +95,14 @@ class Huntglitch
 
     }
 
-    protected function sendPayload(array $post_payload)
+    public function sendPayload(array $postPayload)
     {
         try {
 
-            $baseUrl = ($this->log_endpoint == '') ? 'https://api.huntglitch.com/' : $this->log_endpoint;
+            $baseUrl = ($this->logEndpoint == '') ? 'https://api.huntglitch.com/' : $this->logEndpoint;
 
             $ch = curl_init($baseUrl.'add-log');
-            curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($post_payload));
+            curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($postPayload));
             curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type:application/json']);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
