@@ -146,6 +146,65 @@ use Itpath\Huntglitch\Huntglitch;
 ->create();
 ```
 
+
+## JavaScript Frontend Error Logging
+
+You can send frontend (browser) errors directly to Huntglitch using the built-in JS log route. This allows you to collect logs from your website or web app without any backend code changes.
+
+### How it works
+
+- The package automatically registers a POST route at `/huntglitch/js-log`.
+- You can use the provided JS snippet or your own error collector to send logs to this endpoint.
+- The route will only accept requests from allowed domains (see below).
+
+### Setup
+
+1. **Configure Allowed Domains**
+   
+     In your `.env` file, add:
+     ```env
+     HUNTGLITCH_JS_DOMAIN=example.com,anotherdomain.com,sub.site.com
+     ```
+     This will restrict log submissions to only those domains. Use a comma to separate multiple domains.
+
+2. **Include the JS Collector**
+   
+     Add the following script to your HTML:
+     ```html
+     <script src="https://app.huntglitch.com/huntglitch.js"></script>
+     <script>
+         HuntGlitchAutoInit('ADD_YOUR_BACKEND_URL/huntglitch/js-log');
+     </script>
+     ```
+     Replace `ADD_YOUR_BACKEND_URL` with your backaend laravel URL.
+     No need to change for `/huntglitch/js-log` as it's default laravel route from HuntGlitch.
+
+3. **Frontend JS Example**
+   
+     The JS collector will automatically capture errors and send them to your Laravel backend:
+     ```js
+     window.HuntGlitchAutoInit = function(url) {
+         HuntGlitch.init({
+             endpoint: url,
+             captureConsole: true,
+             batchSize: 1,
+             // ...other options
+         });
+     };
+     // See huntglitch.js for full options and customization
+     ```
+
+### What gets sent
+
+- The JS collector sends error details, stack trace, file, line, and browser info.
+- The Laravel package automatically adds your Huntglitch project and deliverable IDs to each log.
+
+### Security
+
+- Only requests from allowed domains (as set in `HUNTGLITCH_JS_DOMAIN`) will be accepted.
+- Requests from other domains will be rejected with a 403 error.
+
+---
 ## Methods Overview
 
 ### `add($exception, $type = 'error', $additionalData = [])`
