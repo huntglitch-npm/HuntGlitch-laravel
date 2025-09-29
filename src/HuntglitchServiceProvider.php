@@ -3,14 +3,17 @@
 namespace Itpath\Huntglitch;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Log;
 
 class HuntglitchServiceProvider extends ServiceProvider
 {
+    /**
+     * Bootstrap any application services.
+     */
     public function boot()
     {
-        $this->registerJsLogRoute();
+        // Load package routes
+        $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
 
         // Warn if config/huntglitch.php is missing
         if (!file_exists(config_path('huntglitch.php'))) {
@@ -18,8 +21,11 @@ class HuntglitchServiceProvider extends ServiceProvider
         }
     }
 
-    protected function registerJsLogRoute()
+    /**
+     * Register any application services.
+     */
+    public function register()
     {
-        Route::post('/huntglitch/js-log', [\Itpath\Huntglitch\JsLogController::class, 'receive']);
+        //
     }
 }
